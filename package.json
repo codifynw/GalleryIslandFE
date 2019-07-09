@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "the Complete Intro to React, v5",
   "main": "src/App.js",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  },
   "devDependencies": {
     "eslint": "^5.12.1",
     "eslint-config-prettier": "^4.0.0",
     "prettier": "^1.16.1"
   },
   "scripts": {
+    "build": "webpack -d",
+    "watch": "webpack --watch -d",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
