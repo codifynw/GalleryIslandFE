@@ -10,12 +10,23 @@
     "webpack-cli": "^3.3.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel": "^5.8.23",
+    "babel-core": "^5.0.0",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
     "eslint": "^5.12.1",
     "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
     "prettier": "^1.16.1"
   },
   "scripts": {
     "build": "webpack -d",
+    "build-prod": "webpack -p",
     "watch": "webpack --watch -d",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
