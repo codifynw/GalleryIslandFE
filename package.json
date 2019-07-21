@@ -22,7 +22,12 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
-    "prettier": "^1.16.1"
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "file-loader": "^4.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.16.1",
+    "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
     "build": "webpack -d",
@@ -30,7 +35,8 @@
     "watch": "webpack --watch -d",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack-dev-server"
   },
   "author": "Brian Holt <btholt+complete-intro-to-react@gmail.com>",
   "license": "Apache-2.0"
